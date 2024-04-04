@@ -1,9 +1,6 @@
 package org.learning;
 
 public class Main {
-
-    private static Dolphin dolphin;
-
     public static void main(String[] args) {
         //Inizializzo un Dog
         Dog dog = null;
@@ -46,7 +43,7 @@ public class Main {
         eagle.makeNoise();
         eagle.sleap();
         //inizializzo un Dolphin
-        dolphin = null;
+        Dolphin dolphin = null;
         try {
             dolphin = new Dolphin("pluto");
         } catch (IllegalArgumentException e) {
