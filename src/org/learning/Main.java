@@ -14,7 +14,7 @@ public class Main {
         }
         //richiamo tutti i metodi
         System.out.println("Dog: " + dog.getName());
-        dog.swim();
+        makeSwim(dog);
         dog.eat();
         dog.makeNoise();
         dog.sleap();
@@ -27,9 +27,9 @@ public class Main {
         }
         //richiamo tutti i metodi
         System.out.println("\nSparrow: " + sparrow.getName());
-        sparrow.fly();
+        makeSwim(sparrow);
         sparrow.eat();
-        sparrow.swim();
+        makeFly(sparrow);
         sparrow.makeNoise();
         sparrow.sleap();
         //inizializzo uno Eagle
@@ -41,7 +41,7 @@ public class Main {
         }
         //richiamo tutti i metodi
         System.out.println("\nEagle: " + sparrow.getName());
-        eagle.fly();
+        makeFly(eagle);
         eagle.eat();
         eagle.makeNoise();
         eagle.sleap();
@@ -54,9 +54,15 @@ public class Main {
         }
         //richiamo tutti i metodi
         System.out.println("\nDolphin: " + dolphin.getName());
-        dolphin.swim();
+        makeSwim(dolphin);
         dolphin.eat();
         dolphin.makeNoise();
         dolphin.sleap();
+    }
+    public static void makeFly(CanFly animal){
+        animal.fly();
+    }
+    public static void makeSwim(CanSwim animal){
+        animal.swim();
     }
 }
