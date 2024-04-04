@@ -1,6 +1,6 @@
 package org.learning;
 
-public class Eagle extends Animal{
+public class Eagle extends Animal implements CanFly{
     //costruttore
     public Eagle(String name){
         super(name);
@@ -13,5 +13,9 @@ public class Eagle extends Animal{
     @Override
     public void makeNoise() {
         System.out.println("AhAAaa Ahaa Ahaa!");
+    }
+    @Override
+    public void fly() {
+        System.out.println("I am flyyying!");
     }
 }

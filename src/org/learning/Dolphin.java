@@ -1,6 +1,6 @@
 package org.learning;
 
-public class Dolphin extends Animal{
+public class Dolphin extends Animal implements CanSwim{
     //costruttore
     public Dolphin(String name){
         super(name);
@@ -13,5 +13,9 @@ public class Dolphin extends Animal{
     @Override
     public void makeNoise() {
         System.out.println("Ih IIiih");
+    }
+    @Override
+    public void swim() {
+        System.out.println("I'm swimmiiing!");
     }
 }
